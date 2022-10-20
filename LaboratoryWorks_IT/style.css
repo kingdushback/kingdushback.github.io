@@ -1,0 +1,227 @@
+body {
+    min-width: 960px;
+    background-color: rgb(115, 222, 146);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+li {
+    /*маркер внутри блока*/
+    list-style-position: inside;
+    /*маркеры*/
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    display: block;
+    text-align: center;
+    margin: 40px 0;
+}
+/*Таблица*/
+.table{
+    display: table;
+}
+
+.table-row{
+    display: table-row;
+}
+
+.table-col{
+    display: table-cell;
+}
+
+/*личная карточка*/
+.myCard{
+    display: block;
+    width: 800px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.left, .right{
+    display: block;
+}
+.left{
+    margin: 0 auto;
+}
+.right{
+    margin: 10px auto 0 auto;
+}
+.Slider{
+    position: relative;
+    margin: 0 auto;
+}
+/*Задаем размер изображения*/
+.Slides img{
+    width: 640px;
+    height: 360px;
+}
+
+/*скрываем изображение*/
+.Slides {
+    display: none;
+}
+
+/*Кнопки вперед и назад*/
+.back, .next{
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 14px;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.6s linear;
+  border-radius: 0 3px 3px 0;
+}
+
+/*Распложение кнопки переключения вправо*/
+.next{
+    right: 0;
+}
+
+/*Реакция на нажатие кнопок переключения*/
+.back:hover, .next:hover {
+  color: black;
+}
+
+/*Группа индикаторов расположения картинок*/
+.button{
+    width: 88px;
+    margin: 5px auto;
+}
+/*Индикаторы расположения картинки*/
+.buttons {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  background-color: #bbb;
+  transition: 0.6s ease;
+}
+
+/*реакция на нажатие по индикатору*/
+.active, .buttons:hover {
+  background-color: black;
+}
+
+/*Правая сторона*/
+.right table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.right table tr td{
+    padding: 10px 14px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.info{
+    background-color: rgb(85, 133, 229);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about{
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about-otvet{
+    text-align: center;
+}
+
+.text{
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+/*Задание на 2 лабу*/
+.decision{
+    display: block;
+    width: 650px;
+    margin: 50px auto;
+}
+
+.text-dec{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.text-task{
+        margin: 20px 0 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.decision ul{
+    margin: 0 0 10px 0;
+}
+.decision ul li{
+    list-style: square outside;
+    margin: 0 0 5px 0;
+}
+
+.form-1{
+    margin: 10px 20px;
+}
+
+.sumbit{
+  display: inline-block;
+  margin: 5px 10px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+
+.sumbit:hover{
+    background: rgb(53, 167, 110); 
+}
+
+.sumbit:active{
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.input-text{
+  display: inline-block;
+  margin: 5px 10px;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+
+.result{
+    display: none;
+}
+.result2 {
+    display: none;
+}
+.result3{
+    display: none;
+}
+.result, .result2, .result3 p{
+    margin: 10px 20px;
+}
